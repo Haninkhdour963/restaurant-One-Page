@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+    --main-color:red ;
+  }
+  
 *{
     font-family: "Work Sans", sans-serif;
   font-optical-sizing: auto;
@@ -40,13 +44,35 @@
     text-decoration: none;
     border-radius: 16px;
     height: fit-content;
-    border: #588D12 solid 2px;
+    border: var(--main-color) solid 2px;
 }
 .btn-primary{
-    background-color: #588D12;
+    background-color: var(--main-color);
     color: #fff;
 }
 .btn-secondary{
     background-color: white;
     color: black;
 }
+.nav-link:hover{
+color: var(--main-color);
+}
+.active{
+color: var(--main-color);
+    
+}
+
+  
+  /* On screens that are 992px or less, set the background color to blue */
+  @media screen and (max-width: 992px) {
+    .main-image {
+      max-width:25% ;
+    }
+  }
+  
+  /* On screens that are 600px or less, set the background color to olive */
+  @media screen and (max-width: 600px) {
+    body {
+      background-color: olive;
+    }
+  }
